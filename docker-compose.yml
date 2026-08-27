@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: autoria_backend
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGODB_URI=mongodb+srv://untervaldthebest_db_user:Kos28Kos28.@cluster0.dq6tawx.mongodb.net/autoria_clone?appName=Cluster0
+      - JWT_SECRET=AutoriaSuperSecretKey2026_!@#
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: autoria_frontend
+    ports:
+      - "3001:3001"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:3000
+    depends_on:
+      - backend
+    restart: always

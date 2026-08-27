@@ -1,0 +1,15 @@
+### Створити машину
+POST http://localhost:3000/cars
+Content-Type: application/json
+
+{
+  "brand": "Mazda",
+  "model": "3",
+  "price": 6500,
+  "year": 2008
+}
+
+###
+
+### Отримати всі машини
+GET http://localhost:3000/cars
