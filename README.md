@@ -97,6 +97,14 @@ For convenient testing of the platform's functionality, the database already con
 
 collection POSMAN in the main folder autoria-clon under name Auto.ria Clone API.postman_collection
 
+## (.env)
+
+
+\`\`\`env
+PORT=3000
+MONGO_URI=mongodb+srv://untervaldthebest_db_user:Kos28Kos28.@cluster0.dq6tawx.mongodb.net/autoria_clone?appName=Cluster0
+JWT_SECRET=AutoRiaSuperSecretKey2026_!@#
+\`\`\`
 ```
 
 УКРАЇНСЬКОЮ МОВОЮ :
@@ -195,5 +203,13 @@ docker-compose up -d --build
 | **Продавець (Базовий)** | sanya | `sanya@gmail.com` | `sanya@gmail.com` |
 
 ```
+## ⚙️ Змінні оточення (.env)
 
+Проєкт використовує хмарну базу даних. Для локального запуску без Docker (якщо це необхідно), створіть файл `.env` у папці `backend` і вставте туди наступні дані:
+
+\`\`\`env
+PORT=3000
+MONGO_URI=mongodb+srv://untervaldthebest_db_user:Kos28Kos28.@cluster0.dq6tawx.mongodb.net/autoria_clone?appName=Cluster0
+JWT_SECRET=AutoRiaSuperSecretKey2026_!@#
+\`\`\`
 ```
